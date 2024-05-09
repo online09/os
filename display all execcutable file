@@ -1,0 +1,16 @@
+echo "Enter Directory Name:"
+
+read dir
+ls $dir>tempfile.txt
+count=0
+if [ -d $dir ]
+then
+for filename in cat tempfile.txt
+do
+if [ -x $filename ]
+then
+echo "$filename"
+count=expr $count + 1
+fi
+done
+...
