@@ -1,0 +1,16 @@
+echo "Enter the marks for student: "
+read m1
+read m2 
+read m3 
+sum=$(($m1+$m2+$m3))
+echo "Sum is: "$sum
+prc=$(($sum/3))
+echo "Percentage is: "$prc
+if [ $prc -ge 60 ]
+then
+echo "Distinction"
+elif [ $prc -ge 50 ]
+then
+echo "First class"
+elif [ $prc -ge 40 ]
+...
